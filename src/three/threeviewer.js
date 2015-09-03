@@ -156,9 +156,9 @@ JSM.ThreeViewer.prototype.SetRunAfterRender = function (runAfterRender)
 	this.runAfterRender = runAfterRender;
 };
 
-JSM.ThreeViewer.prototype.SetClearColor = function (color)
+JSM.ThreeViewer.prototype.SetClearColor = function (color, opacity)
 {
-	this.renderer.setClearColor (new THREE.Color (color));
+	this.renderer.setClearColor (new THREE.Color (color), opacity);
 	this.DrawIfNeeded ();
 };
 
