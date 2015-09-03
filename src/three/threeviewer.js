@@ -80,7 +80,8 @@ JSM.ThreeViewer.prototype.InitThree = function (canvas)
 
 	var parameters = {
 		canvas : this.canvas,
-		antialias : true
+		antialias : true, 
+		alpha: true
 	};
 	this.renderer = new THREE.WebGLRenderer (parameters);
 	if (!this.renderer) {
